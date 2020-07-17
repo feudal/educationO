@@ -1,0 +1,1463 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.slider {
+  position: relative;
+  min-width: 0;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider .slick-track {
+  /*   //pentru slider vertical
+display: block; */
+}
+
+/* Слайдер */
+
+.slick-slider {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Стрелка */
+
+.clients-slider1 .slick-arrow {
+  font-size: 0;
+  border: 0;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 50px);
+}
+
+/* Стрелка влево */
+
+.clients-slider1 .slick-arrow.slick-prev {
+  background: url("../img/arrow_left.png") no-repeat center;
+  left: 2%;
+}
+
+/* Стрелка вправо */
+
+.clients-slider1 .slick-arrow.slick-next {
+  background: url("../img/arrow_right.png") no-repeat center;
+  right: 2%;
+}
+
+/* Стрелка не активная */
+
+.slick-arrow.slick-disabled {
+  opacity: .6;
+}
+
+/* Точки (булиты) */
+
+.slick-dots {
+  position: absolute;
+  bottom: 4%;
+  left: calc(50% - 57px);
+}
+
+.slick-dots li {
+  font-size: 0;
+  display: inline-block;
+}
+
+/* Активная точка */
+
+.slick-dots li.slick-active button {
+  background-color: var(--color-green);
+  border: 0;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+}
+
+/* Элемент точки */
+
+.slick-dots li button {
+  height: 23px;
+  width: 23px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  padding: 0;
+}
+
+:root {
+  --title-color: #1a1a1a;
+  --color-green: #27ae60;
+  --color-green-opacity02: rgba(39, 174, 96, 0.2);
+  --color-white: #ffffff;
+  --color-section-grey: #f1f1f1;
+  --main-color: #484848;
+  --color-borders: rgba(70, 71, 72, 0.2);
+  --color-input: #d1d1d1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+}
+
+.section-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-container_gray {
+  background-color: var(--color-section-grey);
+}
+
+/*****--------------------header-----------------*****/
+
+.section-header {
+  width: 100%;
+  height: 100vh;
+}
+
+.section-container {
+  position: relative;
+}
+
+.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar_top {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  z-index: 10;
+}
+
+.bar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bar__logo-text {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.bar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar__link {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+.section-header-slider {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+}
+
+.section-header-slider__item-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-header-slider__item {
+  position: relative;
+}
+
+.section-header-slider__item img {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-header-slider__title {
+  color: var(--color-white);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  margin-bottom: 26px;
+}
+
+.section-header-slider__text {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 55px;
+}
+
+.button-green {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: var(--color-green);
+  border: 0;
+  padding: 10px 20px;
+}
+
+
+
+/*****--------------------/header-----------------*****/
+
+/*****--------------------education-----------------*****/
+
+.section-education {
+  padding: 60px 0;
+}
+
+.section-education .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-education-img {
+  margin-right: 100px;
+}
+
+
+
+.section-education-content__title {
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  color: var(--main-color);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.paragraph_white {
+  color: var(--color-white);
+}
+
+.section-education-content__list {
+  margin-top: 80px;
+}
+
+.section-education-content__list li {
+  margin-bottom: 40px;
+}
+
+.section-education-content__img {
+  margin-right: 40px;
+}
+
+.block-title {
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.block-title_white {
+  color: var(--color-white);
+}
+
+/*****--------------------/education-----------------*****/
+
+/*****--------------------feature-----------------*****/
+
+.section-features {
+  padding: 80px 0;
+}
+
+.section-features .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title {
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.section-features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.section-features-wrapper .block-feature:nth-child(1) {
+  margin-bottom: 70px;
+}
+
+.section-features-wrapper .block-feature:nth-child(3) {
+  margin-bottom: 70px;
+}
+
+.block-feature {
+  width: 32%;
+  text-align: center;
+}
+
+.section-features-wrapper-block__icon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.paragraph-wrapper {
+  margin-top: 30px;
+}
+
+/*****--------------------/feature-----------------*****/
+
+/*****--------------------courses-----------------*****/
+
+.section-courses .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0 60px;
+}
+
+.section-courses-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-courses {
+  width: 32%;
+  background-color: var(--color-section-grey);
+}
+
+.block-courses__img {
+  display: block;
+}
+
+.block-courses__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-course-content {
+  padding: 35px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.paragraph-course-wrapper {
+  margin-top: 25px;
+}
+
+.block-courses__line {
+  border: 1px solid var(--color-borders);
+  width: calc(100% + 50px);
+  position: relative;
+  left: -25px;
+  margin-top: 20px;
+}
+
+.block-courses__time,
+.block-courses__thecher {
+  display: inline-block;
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-borders);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.button-courses {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.section-courses-link {
+  opacity: 0.5;
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+/*****--------------------/courses-----------------*****/
+
+/*****--------------------teachers-----------------*****/
+
+.section-teachers .section-container {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-teachers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.block-techear {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.block-teachers__img {
+  height: 96px;
+  width: 96px;
+  margin-right: 20px;
+}
+
+.block-teachers__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.block-teacher__speciality {
+  color: var(--color-green);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*****--------------------/teachers-----------------*****/
+
+/*****--------------------programs-----------------*****/
+
+
+
+.section-programs .section-container {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+
+.section-programs-wprapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section-programs-wprapper .programs-block:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.section-programs-wprapper .programs-block:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.section-programs-wprapper .programs-block:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.programs-block {
+  background-color: var(--color-green);
+  width: 32%;
+  position: relative;
+}
+
+.programs-block__img {
+  width: 100%;
+}
+
+.programs-block__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.programs-block__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.programs-block__content:hover {
+  background-color: var(--color-green);
+}
+
+.paragraph-wrapper {
+  margin-top: 30px;
+}
+
+/*****--------------------/programs-----------------*****/
+
+/*****--------------------clients-----------------*****/
+
+.section-clients .section-container {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients-slider1 {
+  width: 60%;
+  margin-top: 50px;
+}
+
+
+
+.clients-slider1__photo {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.clients-slider2 {
+  width: 50%;
+}
+
+.clients-slider2__wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.clients-slider2__info {
+  margin-top: 70px;
+}
+
+.clients-slider2__name {
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.clients-slider2__spciality {
+  color: var(--main-color);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/*****--------------------/clients-----------------*****/
+
+/*****--------------------blog-----------------*****/
+
+.section-blog .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.section-blog__wrapper {
+  margin: 50px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-blog-block {
+  display: inline-block;
+  margin-right: 1%;
+  width: 17.0%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.section-blog__wrapper :last-child {
+  margin-right: 0;
+}
+
+.section-blog-block_no-focus {
+  opacity: 0.5;
+}
+
+.section-blog-block__img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.section-blog-block__img:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.section-blog-block__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.section-blog-block__content {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.section-blog-block__title {
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.section-blog-block__text {
+  color: var(--main-color);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 25px;
+}
+
+/*****--------------------/blog-----------------*****/
+
+/*****--------------------subscribe-----------------*****/
+
+.section-subscribe {
+  background: url('../img/news_letter.png') no-repeat center;
+  background-size: cover;
+}
+
+.section-subscribe .section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-subscribe_title {
+  color: var(--color-white);
+  font-family: "Nunito Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.section-subscribe_input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--color-input);
+  padding: 10px;
+  margin: 0 30px;
+}
+
+.section-subscribe_input {
+  color: var(--color-white);
+}
+
+.button_large {
+  padding: 10px 60px;
+}
+
+.button_left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+/*****--------------------/subscribe-----------------*****/
+
+/*****--------------------contact-----------------*****/
+
+.section-contact .section-container {
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.section-contact-form {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-contact-form__input {
+  opacity: 0.7;
+  color: var(--title-color);
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-input);
+}
+
+.section-contact__text-area {
+  border: 1px solid var(--color-input);
+  height: 45%;
+}
+
+.section-contact-map {
+  width: 48%;
+}
+
+.section-contact-map__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.section-contact-map__location,
+.section-contact-map__email,
+.section-contact-map__phone {
+  width: 31%;
+  color: var(--main-color);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+.section-contact-map__logo {
+  margin-bottom: 25px;
+}
+
+/*****--------------------/contact-----------------*****/
+
+/*****--------------------footer-----------------*****/
+
+.section-footer {
+  background-color: var(--title-color);
+  padding: 45px 0;
+}
+
+/*****--------------------/footer-----------------*****/
+
+.webp .clients-slider1 .slick-arrow.slick-prev { background: url(../img/arrow_left.webp) no-repeat center; }
+
+.webp .clients-slider1 .slick-arrow.slick-next { background: url(../img/arrow_right.webp) no-repeat center; }
+
+.webp .section-subscribe { background: url(../img/news_letter.webp) no-repeat center; }
